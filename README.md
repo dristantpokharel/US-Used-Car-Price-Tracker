@@ -1,7 +1,6 @@
 # US-Used-Car-Price-Tracker
 From Truecar.com
 
-"""
 # Overview
 The Car Price Tracker Project aims to help users filter and find the best car options based on specific criteria, such as price and mileage. This project leverages web scraping to gather real-time data from TrueCar and stores it in a SQL database, allowing users to make informed decisions when purchasing a vehicle.
 
@@ -21,13 +20,6 @@ This project provides an automated system that:
 **User Requirements:** A user wants to buy a Honda Pilot under $35,000, with fewer than 30,000 miles, located in Texas.  
 **Automation:** The system automatically scrapes data from TrueCar every 5 minutes to update the SQL database.  
 **Notifications:** If a new listing appears that meets the user’s requirements, the system sends an email notification, ensuring the user never misses a great deal.
-
-# Project Structure
-Car-Price-Tracker/
-├── part1_scraping.py          # Script for scraping car data from TrueCar
-├── part2_notifications.py      # Script for sending email notifications based on criteria
-├── requirements.txt            # Required packages for the project
-└── README.md                   # Project documentation
 
 # Technologies Used
 - **Python:** Programming language used for web scraping and automation.
