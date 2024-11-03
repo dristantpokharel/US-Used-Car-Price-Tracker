@@ -1,4 +1,4 @@
-# US-Used-Car-Price-Tracker
+# US Used Car Price Tracker
 From Truecar.com
 
 # Overview
