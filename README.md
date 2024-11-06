@@ -2,7 +2,7 @@
 From Truecar.com
 
 ## Overview
-The Car Price Tracker Project aims to help users filter and find the best car options based on specific criteria, such as price and mileage. This project leverages web scraping to gather real-time data from TrueCar and stores it in a SQL database, allowing users to make informed decisions when purchasing a vehicle.
+The Car Price Tracker Project aims to help users filter and find the best car options based on specific criteria, such as price and mileage. This project leverages web scraping to gather real-time data from TrueCar and store it in an SQL database, allowing users to make informed decisions when purchasing a vehicle.
 
 ## Use Case
 
@@ -12,7 +12,7 @@ Finding the right car can be overwhelming due to the vast number of options avai
 ### Solution
 This project provides an automated system that:
 - Scrapes data from TrueCar to obtain the latest car listings.
-- Stores the data in a SQL database for easy querying and analysis.
+- Stores the data in an SQL database for easy querying and analysis.
 - Checks every 5 minutes for new entries that meet user-defined criteria.
 - Sends email notifications when new cars that fit the specified criteria are found.
 
@@ -31,6 +31,7 @@ This project provides an automated system that:
 ## Notebooks
 - **1. Web Scraping and Transformation.py:** Scraping the website, manipulating the data, and storing it to the SQL server.
 - **2. Email Notification.py:** Sends an email if a car with the defined criteria is listed on the website.
+- **3
 
 ## Limitations
 - **Specific Website:** The current implementation only scrapes data from TrueCar. This limits the breadth of available car listings, as other platforms may have different inventories.
@@ -42,19 +43,21 @@ This project provides an automated system that:
 ## Instructions to Automate the process every 5 minutes.
 
 **Instructions for Mac:**
-0. Save the final script to a 'py' file.
+0. Save both the final script to a 'py' file.
 1. Open Terminal.
 2. Type `crontab -e` to open the crontab editor.
 3. Type `*/5 * * * * /opt/anaconda3/bin/python "Your_file_path"` for both the py files to schedule the script to run every 5 minutes.
 4. Type `:wq` and hit return to exit the crontab.
 5. To check if it is running, type `crontab -l`. This shows all running crontab functions.
+   
 
 ### Some additional things to consider:
-1. Ensure your SQL database is properly configured and accessible from the script.
-2. Recheck the database name of SQL and Python to be sure what needs to be the same or not.
-3. Keep the main server running at all times. Example: As I am using Docker on the Mac to keep the schedule running.
-4. Change the frequency by modifying the `5` in the crontab command to your desired number of minutes. For example, `0 */2 * * * /` for every 2 hours.
-5. Add logging to your scripts to track errors and aid in troubleshooting.
-6. Verify that your email settings are correct and test the functionality to ensure notifications are sent.
-7. Monitor CPU and memory usage when running scripts frequently to manage system resources effectively.
-8. Run your script manually before adding it to crontab to ensure it executes without errors.
+1. When defining car brand and model at the start, a directory like brand-Toyota, model-'Land-Cruiser', a hyphen(-) is used in between two words.
+2. Ensure your SQL database is configured and accessible from the script.
+3. Recheck the database name of SQL and Python to be sure what needs to be the same or not.
+4. Keep the main server running at all times. Example: As I am using Docker on the Mac to keep the schedule running.
+5. Change the frequency by modifying the `5` in the crontab command to your desired number of minutes. For example, `0 */2 * * * /` for every 2 hours.
+6. Add logging to your scripts to track errors and aid in troubleshooting.
+7. Verify that your email settings are correct and test the functionality to ensure notifications are sent.
+8. Monitor CPU and memory usage when running scripts frequently to manage system resources effectively.
+9. Run your script manually before adding it to crontab to ensure it executes without errors.
