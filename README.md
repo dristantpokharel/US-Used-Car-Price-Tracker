@@ -67,3 +67,4 @@ This project provides an automated system that:
 8. Test email settings to ensure notifications are sent successfully.
 9. Monitor CPU and memory usage when running frequent scripts to optimize system performance.
 10. Run each script manually first to confirm it works before scheduling with crontab.
+11. Log files are generated when you run the code, I have uploaded the output log for reference.
