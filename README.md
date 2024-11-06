@@ -17,7 +17,7 @@ This project provides an automated system that:
 - Sends email notifications for new listings that match specified criteria.
 
 ## User Scenario
-**User Requirements**: A user wants to buy a Honda Pilot that is under $28,000 and has fewer than 30,000 miles.  
+**User Requirements**: A user wants to buy a Honda Pilot that is under $35,000 and has fewer than 30,000 miles.  
 **Automation**: The system scrapes data from TrueCar every 5 minutes, updating the SQL database.  
 **Notifications**: When a new listing meets the user's requirements, an email notification is sent.
 
