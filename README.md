@@ -44,7 +44,7 @@ This project provides an automated system that:
 - **HTML Structure Changes**: Changes to TrueCar’s layout may affect scraping and require updates to the code.
 - **Data Accuracy**: Dependent on the reliability and structure of TrueCar’s website.
 - **Rate Limiting**: Frequent requests may trigger rate limits or IP blocking.
-- - **Performance**: Approx 2.5 seconds to scrap 1 page i.e. 30 car listing.
+- **Performance**: Approx 2.5 seconds to scrap 1 page i.e. 30 car listing.
 
 ## Setup Instructions for Automated 5-Minute Updates
 
