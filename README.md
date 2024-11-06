@@ -40,11 +40,11 @@ This project provides an automated system that:
 
 ## Limitations
 - **Data Source**: Only scrapes data from TrueCar, limiting the scope to listings available there.
-- **Performance with Large Listings**: Large datasets may slow down the scraping process.
+- **Performance with Large Listings**: A larger listing number may slow down the scraping process.
 - **HTML Structure Changes**: Changes to TrueCar’s layout may affect scraping and require updates to the code.
 - **Data Accuracy**: Dependent on the reliability and structure of TrueCar’s website.
 - **Rate Limiting**: Frequent requests may trigger rate limits or IP blocking.
-- **Performance**: Approx 2.5 seconds to scrap 1 page i.e. 30 car listing.
+- **Performance**: Approx 3 seconds to scrap 1 page i.e. 30 car listing.
 
 ## Setup Instructions for Automated 5-Minute Updates
 
