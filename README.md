@@ -65,7 +65,8 @@ This project provides an automated system that:
 6. Adjust the frequency of cron jobs by modifying the `5` in the crontab (e.g., `0 */2 * * *` for every 2 hours).
 7. Use logging to track errors and aid in troubleshooting.
 8. Test email settings to ensure notifications are sent successfully.
-9. Monitor CPU and memory usage when running frequent scripts to optimize system performance.
-10. Run each script manually first to confirm it works before scheduling with crontab.
-11. Log files are generated when you run the code, I have uploaded the output log for reference.
-12. After editing and coding in the 'ipynb', the 'py' file is saved to be used for automation using crontab.
+9. I used gmx as my email server, you can use any other mailing server, make sure to test the settings to ensure it is running.
+10. Monitor CPU and memory usage when running frequent scripts to optimize system performance.
+11. Run each script manually first to confirm it works before scheduling with crontab.
+12. Log files are generated when you run the code, I have uploaded the output log for reference.
+13. After editing and coding in the 'ipynb', the 'py' file is saved to be used for automation using crontab.
