@@ -17,9 +17,9 @@ This project provides an automated system that:
 - Sends email notifications for new listings that match specified criteria.
 
 ## User Scenario
-**User Requirements:** A user wants to buy a Toyota RAV4 under $40,000 with fewer than 30,000 miles.  
-**Automation:** The system scrapes data from TrueCar every 5 minutes, updating the SQL database.  
-**Notifications:** When a new listing meets the user's requirements, an email notification is sent.
+**User Requirements**: A user wants to buy a Honda Pilot that is under $40,000 and has fewer than 30,000 miles.  
+**Automation**: The system scrapes data from TrueCar every 5 minutes, updating the SQL database.  
+**Notifications**: When a new listing meets the user's requirements, an email notification is sent.
 
 ## Technologies Used
 - **Python**: For web scraping and automation.
@@ -29,7 +29,7 @@ This project provides an automated system that:
 - **Docker**: Hosts SQL Database.
 - **Crontab**: Schedules scripts to run automatically every 5 minutes.
 
-## Project Components
+## Notebooks
 - **1. Web Scraping and Transformation.py**: Scrapes data from TrueCar, transforms it, and stores it in SQL.
 - **2. Email Notification.py**: Sends an email if a new listing meets the defined criteria.
 
@@ -44,6 +44,7 @@ This project provides an automated system that:
 - **HTML Structure Changes**: Changes to TrueCar’s layout may affect scraping and require updates to the code.
 - **Data Accuracy**: Dependent on the reliability and structure of TrueCar’s website.
 - **Rate Limiting**: Frequent requests may trigger rate limits or IP blocking.
+- - **Performance**: Approx 2.5 seconds to scrap 1 page i.e. 30 car listing.
 
 ## Setup Instructions for Automated 5-Minute Updates
 
