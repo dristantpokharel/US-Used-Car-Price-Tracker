@@ -25,7 +25,7 @@ import os
 
 car_brand = 'honda'
 car_model = 'pilot'
-zip_code = '78628'
+zip_code = '78701'
 radius = '100'
 base_url = f'https://www.truecar.com/used-cars-for-sale/listings/{car_brand}/{car_model}/location-{zip_code}/?searchRadius={radius}&page='
 
@@ -174,14 +174,14 @@ car_data_df = pd.DataFrame(car_data_list)
 # To log the web scraping time.
 
 # Defining a log file
-log_file_path = '/Users/dris/Desktop/SQL-ETL/Car Prices Project/GitHub/ETL/web_scraping.log'
+log_file_path = '/path/to/log/file/web_scraping.log'
 
 # If the directory doesn't exists, this creates it.
 os.makedirs(os.path.dirname(log_file_path), exist_ok=True)
 
 # Logging setup
 logging.basicConfig(
-    filename='/Users/dris/Desktop/SQL-ETL/Car Prices Project/GitHub/ETL/web_scraping.log',
+    filename='/path/to/log/file/web_scraping.log',
     level=logging.INFO,
     format='%(asctime)s - %(message)s'
 )
@@ -232,7 +232,7 @@ car_data_df = car_data_df[['SNum','Year', 'Brand', 'Model', 'Adv_Model', 'AWD', 
 # A database needs to be created on SQL before runnning it.
 # Create engine establishes the connection to write data on the specified database.
 
-engine = create_engine ("mssql+pyodbc://SA:Password123@localhost/Github_Projects?driver=ODBC+Driver+18+for+SQL+Server&Encrypt=yes&TrustServerCertificate=yes")
+engine = create_engine ("mssql+pyodbc://SA:YourPasswordHere@localhost/DatabaseNameHere?driver=ODBC+Driver+18+for+SQL+Server&Encrypt=yes&TrustServerCertificate=yes")
 car_data_df.to_sql(f"{car_brand}_{car_model}".replace("-", "_"), engine, if_exists='replace', index=False)
 engine.dispose()
 
