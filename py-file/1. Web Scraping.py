@@ -100,7 +100,7 @@ def scrape_car_details(url, session):
             awd_element = soup.find('div', class_='flex items-center')
             awd = awd_element.get_text(strip=True) if awd_element else "N/A"
             # Number of accidents   
-            accident_element = soup.find(string=lambda text: text and "Accidents" in text)
+            accident_element = soup.find(string=lambda text: text and "Accident" in text)
             accident = accident_element.get_text(strip=True) if accident_element else "N/A"
             # Number of owners
             owner_element = soup.find(string=lambda text: text and "Owner" in text)
